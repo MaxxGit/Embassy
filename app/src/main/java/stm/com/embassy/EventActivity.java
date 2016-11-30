@@ -1,12 +1,8 @@
 package stm.com.embassy;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -39,14 +35,14 @@ public class EventActivity extends AppCompatActivity {
 //            actionBar.setDisplayHomeAsUpEnabled(true);
 //        }
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
         events = (ListView)findViewById(R.id.events);
         events.setAdapter(getListAdapter());
@@ -62,16 +58,19 @@ public class EventActivity extends AppCompatActivity {
             String label = getString(getResources().getIdentifier(eventsItem[i] + "_label", "string", getPackageName()));
             String title = getString(getResources().getIdentifier(eventsItem[i] + "_title", "string", getPackageName()));
             String content = getString(getResources().getIdentifier(eventsItem[i] + "_content", "string", getPackageName()));
+            int image = getResources().getIdentifier(eventsItem[i] + "_view", "drawable", getPackageName());
             event.put(MENU_ATTR_ID, eventsItem[i]);
             event.put(MENU_ATTR_LABEL, label);
             event.put(MENU_ATTR_TITLE, title);
             event.put(MENU_ATTR_CONTENT, content);
+            event.put(MENU_ATTR_ICON, image);
             events.add(event);
         }
 
-        String[] from = new String[] { MENU_ATTR_LABEL, MENU_ATTR_TITLE, MENU_ATTR_CONTENT };
-        int[] to = new int[] { R.id.event_item, R.id.event_title, R.id.event_content };
-        SimpleAdapter adapter = new SimpleAdapter(this, events, R.layout.content_events_item, from, to);
+        String[] from = new String[] { MENU_ATTR_LABEL, MENU_ATTR_TITLE, MENU_ATTR_CONTENT, MENU_ATTR_ICON };
+        int[] to = new int[] { R.id.event_item, R.id.event_title, R.id.event_content, R.id.event_image };
+        SimpleAdapter adapter = new SimpleAdapter(this, events, R.layout.adapter_events, from, to);
         return adapter;
     }
+
 }
