@@ -25,6 +25,14 @@
         <activity
             android:name=".EventActivity"
             android:label="@string/title_activity_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/title_activity_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConsolateActivity"
+            android:label="@string/title_activity_consolate"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

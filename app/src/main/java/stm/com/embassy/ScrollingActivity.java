@@ -55,6 +55,16 @@ public class ScrollingActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onInfoClick(View view){
+        Intent intent = new Intent(this, InfoActivity.class);
+        startActivity(intent);
+    }
+
+    public void onConsolateClick(View view){
+        Intent intent = new Intent(this, ConsolateActivity.class);
+        startActivity(intent);
+    }
+
     public void onEventClick(View view){
         Intent intent = new Intent(this, EventActivity.class);
         startActivity(intent);
