@@ -11,14 +11,14 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class InfoMapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class ConsolateMapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_info_maps);
+        setContentView(R.layout.activity_consolate_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -40,13 +40,12 @@ public class InfoMapsActivity extends FragmentActivity implements OnMapReadyCall
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(41.924511, 12.516278);
+        LatLng sydney = new LatLng(41.938895, 12.533403);
         mMap.addMarker(new MarkerOptions()
                 .position(sydney)
-                .title("Ambasciata della Tunisia")
+                .title("Consolato della Tunisia")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker))
         );
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 11.0f));
-
     }
 }

@@ -25,5 +25,6 @@
     <string name="title_activity_info">InfoActivity</string>
     <string name="title_activity_consolate">ConsolateActivity</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_consolate_maps">Map</string>
 
 </resources>

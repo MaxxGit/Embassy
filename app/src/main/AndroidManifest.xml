@@ -55,7 +55,10 @@
 
         <activity
             android:name=".InfoMapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".ConsolateMapsActivity"
+            android:label="@string/title_activity_consolate_maps"></activity>
     </application>
 
 </manifest>
