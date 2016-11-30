@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- android:background="@drawable/list_selector" -->
+<LinearLayout android:id="@+id/events_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/item_image_padding" >
+    
+    <TextView
+        android:id="@+id/event_item"
+        style="@android:style/TextAppearance.Medium"
+        android:padding="@dimen/item_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/event"
+        android:drawablePadding="@dimen/item_image_padding"
+        android:textColor="?android:textColorPrimary" />
+
+    <TextView
+        android:id="@+id/event_title"
+        style="@android:style/TextAppearance.Medium"
+        android:padding="@dimen/item_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/item_image_padding"
+        android:textColor="?android:textColorPrimary"/>
+
+    <TextView
+        android:id="@+id/event_content"
+        style="@android:style/TextAppearance.Small"
+        android:padding="@dimen/item_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/item_image_padding"
+        android:textColor="?android:textColorSecondary"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+</LinearLayout>
