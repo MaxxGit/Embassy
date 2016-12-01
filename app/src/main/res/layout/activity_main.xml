@@ -14,7 +14,9 @@
             style="@style/Base.TextAppearance.AppCompat.Large.Inverse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
+            android:layout_margin="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
             android:background="@drawable/ambasciata"
             android:onClick="onInfoClick"
             android:text="AMBASCIATA TUNISINA" />
@@ -23,7 +25,9 @@
             style="@style/Base.TextAppearance.AppCompat.Large.Inverse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
+            android:layout_margin="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
             android:background="@drawable/consolati"
             android:onClick="onConsolateClick"
             android:text="CONSOLATI TUNISINI" />
@@ -32,7 +36,9 @@
             style="@style/Base.TextAppearance.AppCompat.Large.Inverse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
+            android:layout_margin="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
             android:background="@drawable/fireworks"
             android:onClick="onEventClick"
             android:text="EVENTI" />
