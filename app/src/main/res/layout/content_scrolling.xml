@@ -18,19 +18,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:text="INFORMAZIONI"
+            android:text="AMBASCIATA TUNISINA"
             android:onClick="onInfoClick"
             style="@style/Base.TextAppearance.AppCompat.Large.Inverse"
-            android:background="@drawable/info"/>
+            android:background="@drawable/ambasciata"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:text="AMBASCIATE-CONSOLATI"
+            android:text="CONSOLATI TUNISINI"
             android:onClick="onConsolateClick"
             style="@style/Base.TextAppearance.AppCompat.Large.Inverse"
-            android:background="@drawable/flags"/>
+            android:background="@drawable/consolati"/>
 
         <TextView
             android:layout_width="match_parent"

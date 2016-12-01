@@ -50,11 +50,6 @@ public class ScrollingActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onClick(View view){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
     public void onInfoClick(View view){
         Intent intent = new Intent(this, InfoActivity.class);
         startActivity(intent);
