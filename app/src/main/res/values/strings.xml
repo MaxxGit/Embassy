@@ -16,13 +16,14 @@
     <string name="info_content_2">Telefono 068603060, Fax: 0686218204, email: at.roma@tiscali.it</string>
     <string name="info_content_3">Orari: da martedì a sabato dalle 08.30 alle 16.30</string>
 
-    <string name="new_ambassador_label">Yahoo notizie</string>
+    <string name="new_ambassador_label">Moez Sinaoui ambasciatore Tunisia in Italia, gradimento Mattarella</string>
     <string name="new_ambassador_title">Moez Sinaoui ambasciatore Tunisia in Italia, gradimento Mattarella</string>
     <string name="new_ambassador_content">Roma, 3 ott. (askanews) - Il presidente della Repubblica Sergio Mattarella ha concesso il gradimento per la nomina di Moez Sinaoui ad ambasciatore della Repubblica tunisina presso la Repubblica italiana. Lo rende noto la Farnesina.</string>
 
-    <string name="other_label">Farnesina news</string>
+    <string name="other_label">Conferenza Internazionale sugli Investimenti "Tunisia 2020" si presenta all’Italia (Milano, 20 ottobre 2016)</string>
     <string name="other_title">Investire in Tunisia: la Conferenza Internazionale sugli Investimenti "Tunisia 2020" si presenta all’Italia (Milano, 20 ottobre 2016)</string>
     <string name="other_content">Il prossimo 20 ottobre a Milano, presso la Sala Pirelli del Palazzo Stelline, si svolgerà il Roadshow di presentazione della Conferenza Internazionale sugli Investimenti "Tunisia 2020" pervista a Tunisi nei giorni 29 30 novembre 2016. L’obiettivo della Conferenza "Tunisia 2020" è di presentare ai vari partner internazionali il Piano di Sviluppo 2016 2020 e di dare una nuova immagine della Tunisia per favorire la sua ripresa economica. Saranno presentati oltre cinquanta progetti di investimento pubblici, privati, e di partenariato pubblico privato, per un totale di 60 miliardi di dollari, in diversi settori quali trasporti e infrastrutture, energia e rinnovabili, agricoltura e sviluppo sostenibile, costruzioni, logistica, sanità, sviluppo regionale, digitalizzazione, educazione, trattamento delle acque. La Conferenza “Tunisia 2020” prevede la partecipazione di decine di capi di Stato e di Governo, di Istituzioni internazionali e di centinaia tra aziende pubbliche e gruppi privati. Prima di arrivare in Italia, il Roadshow prevede tappe a New York e Washington, Parigi, Londra, Francoforte e in Medio Oriente. Ad illustrare i vantaggi dell’investire in Tunisia, a Milano interverranno il Ministro tunisino dello Sviluppo, dell’Investimento e della Cooperazione Internazionale, Fadhel Abdelkefi, l’Ambasciatore della Tunisia in Italia, Moez Sinaoui, ed il Commissario Generale della Conferenza "Tunisia 2020", Mourad Fradi. L’elenco dei progetti può essere consultato nel sito dedicato all’evento all’indirizzo www.tunisia2020.com (in alternativa, è possibile scaricare un elenco non esaustivo, in italiano, cliccando qui). Per prendere parte al Roadshow di Milano, è sufficiente inviare una richiesta di iscrizione ai seguenti indirizzi email: p.jarvis@arjil.fr e sandro.fratini@ctici.org.tn.</string>
+
     <string name="title_activity_info">InfoActivity</string>
     <string name="title_activity_consolate">ConsolateActivity</string>
     <string name="title_activity_maps">Map</string>
