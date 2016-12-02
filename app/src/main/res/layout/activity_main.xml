@@ -19,7 +19,7 @@
             android:paddingRight="8dp"
             android:background="@drawable/ambasciata"
             android:onClick="onInfoClick"
-            android:text="AMBASCIATA TUNISINA" />
+            android:text="@string/ambasciata_main_button" />
 
         <TextView
             style="@style/Base.TextAppearance.AppCompat.Large.Inverse"
