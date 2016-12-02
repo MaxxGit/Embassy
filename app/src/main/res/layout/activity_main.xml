@@ -30,7 +30,7 @@
             android:paddingRight="8dp"
             android:background="@drawable/consolati"
             android:onClick="onConsolateClick"
-            android:text="CONSOLATI TUNISINI" />
+            android:text="@string/consolati_main_button" />
 
         <TextView
             style="@style/Base.TextAppearance.AppCompat.Large.Inverse"
