@@ -22,4 +22,11 @@
         <item>other</item>
     </array>
 
+    <array name="consolates_item">
+        <item>roma</item>
+        <!--<item>milano</item>-->
+        <!--<item>genova</item>-->
+        <!--<item>napoli</item>-->
+        <!--<item>palermo</item>-->
+    </array>
 </resources>

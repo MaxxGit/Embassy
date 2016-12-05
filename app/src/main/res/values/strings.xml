@@ -10,8 +10,8 @@
     <string name="info_content">E’ una sezione bilaterale a Roma e tratta degli interessi Tunisina in Italia. L’ambasciata ha anche un ruolo importante nello sviluppo commerciale, negli affari culturali e stabilisce contatti con la stampa locale. Le attività di tutte le ambasciate Tunisina solitamente sono coordinate dal Ministero degli affari esteri. L’ambasciata Tunisina a Roma è comandata dall’ambasciatore Tunisiia in Italia, Naceur Mestiri.</string>
 
     <string name="consolate_label">Servizi consolari</string>
-    <string name="consolate_content">La sezione consolare dell’ambasciata Tunisina offre assistenza consolare. La sezione consolare, in generale, offre servizi alle persone che voglino visitare il Tunisiia e ai citadini Tunisina che vivono in Italia. Solitamente i servizi includono richiesta di visto, rinuovo di passaporti, registro di matrimonio, legalizzazione di documenti, nascita di bambini, questioni nazionali Tunisiia e altri. Si può contattare la sezione consolare dell’ambasciata Tunisina a Roma tramite il numero di telefono (+39) 06 8603 060-8 o email at.roma@tiscali.it\n Molti consolati Tunisiia offrono gli stessi servizi disponibili in un’ambasciata. Se l’ambasciata è lontano da dove sei, sarebbe meglio cercare un consolato Tunisina che possa offrire i servizi di cui hai bisogno. Abbiamo fatto un elenco dei consolati Tunisina in Italia. Clicca sulla città più vicina a te nel elenco sottoriportato per avere più informazioni:Firenze, Genova, Milano, Napoli e Palermo</string>
-
+    <!--<string name="consolate_content">La sezione consolare dell’ambasciata Tunisina offre assistenza consolare. La sezione consolare, in generale, offre servizi alle persone che voglino visitare il Tunisiia e ai citadini Tunisina che vivono in Italia. Solitamente i servizi includono richiesta di visto, rinuovo di passaporti, registro di matrimonio, legalizzazione di documenti, nascita di bambini, questioni nazionali Tunisiia e altri. Si può contattare la sezione consolare dell’ambasciata Tunisina a Roma tramite il numero di telefono (+39) 06 8603 060-8 o email at.roma@tiscali.it\n Molti consolati Tunisiia offrono gli stessi servizi disponibili in un’ambasciata. Se l’ambasciata è lontano da dove sei, sarebbe meglio cercare un consolato Tunisina che possa offrire i servizi di cui hai bisogno. Abbiamo fatto un elenco dei consolati Tunisina in Italia. Clicca sulla città più vicina a te nel elenco sottoriportato per avere più informazioni:Firenze, Genova, Milano, Napoli e Palermo</string>-->
+    <string name="consolate_content">La sezione consolare dell’ambasciata Tunisina offre assistenza consolare. La sezione consolare, in generale, offre servizi alle persone che voglino visitare il Tunisiia e ai citadini Tunisina che vivono in Italia. Solitamente i servizi includono richiesta di visto, rinuovo di passaporti, registro di matrimonio, legalizzazione di documenti, nascita di bambini, questioni nazionali Tunisiia e altri. Si può contattare la sezione consolare dell’ambasciata Tunisina a Roma tramite il numero di telefono (+39) 06 8603 060-8 o email at.roma@tiscali.it.</string>
     <string name="info_content_1">Indirizzo: Via Asmara, 7 00199 Roma Italia </string>
     <string name="info_content_2">Telefono 068603060, Fax: 0686218204, email: at.roma@tiscali.it</string>
     <string name="info_content_3">Orari: da martedì a sabato dalle 08.30 alle 16.30</string>
@@ -32,5 +32,9 @@
     <string name="ambasciata_main_button">AMBASCIATA TUNISINA</string>
     <string name="consolati_main_button">CONSOLATI TUNISINI</string>
     <string name="eventi_main_button">EVENTI</string>
+
+    <string name="roma_label">CONSOLATO TUNISINO A ROMA</string>
+    <string name="roma_content">Indirizzo: Via Montecristo 2 - Roma\nOrari: 06 87183159\nFax: 06 87188002\nE-mail: ctsictom@tin.it</string>
+
 
 </resources>
