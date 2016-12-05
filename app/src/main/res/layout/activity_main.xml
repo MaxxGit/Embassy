@@ -41,7 +41,7 @@
             android:paddingRight="8dp"
             android:background="@drawable/fireworks"
             android:onClick="onEventClick"
-            android:text="EVENTI" />
+            android:text="@string/eventi_main_button" />
 
     </LinearLayout>
 
