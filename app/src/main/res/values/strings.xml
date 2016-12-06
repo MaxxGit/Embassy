@@ -43,7 +43,7 @@
     <string name="genova_content">Indirizzo: Via XX Settembre 2 - 16121 Genova\nTelefono: 010 5702091\nFax: 010 5702117</string>
 
     <string name="napoli_label">CONSOLATO TUNISINO A NAPOLI</string>
-    <string name="napoli_content">Indirizzo:  Centro direzionale isola F10 - 80143 Napoli\nTelefono: 081 7345161\nFax: 081 7345171</string>
+    <string name="napoli_content">Indirizzo: Centro direzionale isola F10 - 80143 Napoli\nTelefono: 081 7345161\nFax: 081 7345171</string>
 
     <string name="palermo_label">CONSOLATO TUNISINO A PALERMO</string>
     <string name="palermo_content">Indirizzo: Piazza Ignazio Florio 24  90139 Palermo\nTelefono: 091 321231\nFax: 091 6111733</string>

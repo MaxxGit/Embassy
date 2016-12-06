@@ -32,18 +32,18 @@
 
     <array name="consolates_lat">
         <item>41.938895</item>
-        <item>milano</item>
-        <item>genova</item>
-        <item>napoli</item>
-        <item>palermo</item>
+        <item>45.464053</item>
+        <item>44.404466</item>
+        <item>40.857999</item>
+        <item>38.124754</item>
     </array>
 
     <array name="consolates_lng">
         <item>12.533403</item>
-        <item>milano</item>
-        <item>genova</item>
-        <item>napoli</item>
-        <item>palermo</item>
+        <item>9.206659</item>
+        <item>8.943811</item>
+        <item>14.283894</item>
+        <item>13.360476</item>
     </array>
 
 </resources>
