@@ -1,5 +1,7 @@
 package stm.com.embassy;
 
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
@@ -40,11 +42,14 @@ public class ConsolateMapsActivity extends FragmentActivity implements OnMapRead
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        Resources res = getResources();
         mMap = googleMap;
         String title = getResources().getStringArray(R.array.consolates_item)[position];
         // Add a marker in Sydney and move the camera
-        double lat = Double.parseDouble(getResources().getStringArray(R.array.consolates_lat)[position]);
-        double lng = Double.parseDouble(getResources().getStringArray(R.array.consolates_lng)[position]);
+        TypedArray latitudes = res.obtainTypedArray(R.array.consolates_lat);
+        double lat = latitudes.getFloat(position, 0);
+        TypedArray longitudes = res.obtainTypedArray(R.array.consolates_lng);
+        double lng = longitudes.getFloat(position, 0);
         LatLng consolate = new LatLng(lat, lng);
         mMap.addMarker(new MarkerOptions()
                 .position(consolate)
