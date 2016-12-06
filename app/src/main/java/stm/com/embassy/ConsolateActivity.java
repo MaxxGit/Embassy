@@ -6,7 +6,9 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -17,6 +19,8 @@ import java.util.List;
 import java.util.Map;
 
 public class ConsolateActivity extends AppCompatActivity {
+
+    private String TAG = "ConsolateActivity";
 
     private ListView consolates;
 
@@ -41,6 +45,14 @@ public class ConsolateActivity extends AppCompatActivity {
 
         consolates = (ListView)findViewById(R.id.consolates);
         consolates.setAdapter(getListAdapter());
+        consolates.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.i(TAG, String.valueOf(position));
+//                Intent in=new Intent(CuacaNowActivity.this,DetailActivity.class);
+//                startActivity(in)
+            }
+        });
     }
 
     private ListAdapter getListAdapter() {

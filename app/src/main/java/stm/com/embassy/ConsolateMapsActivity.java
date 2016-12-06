@@ -3,27 +3,27 @@ package stm.com.embassy;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
-//import com.google.android.gms.maps.CameraUpdateFactory;
-//import com.google.android.gms.maps.GoogleMap;
-//import com.google.android.gms.maps.OnMapReadyCallback;
-//import com.google.android.gms.maps.SupportMapFragment;
-//import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-//import com.google.android.gms.maps.model.LatLng;
-//import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
-public class ConsolateMapsActivity extends FragmentActivity //implements OnMapReadyCallback
+public class ConsolateMapsActivity extends FragmentActivity implements OnMapReadyCallback
 {
 
-    //private GoogleMap mMap;
+    private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consolate_maps);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        //SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                //.findFragmentById(R.id.map);
-        //mapFragment.getMapAsync(this);
+        //Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
     }
 
 
@@ -36,17 +36,17 @@ public class ConsolateMapsActivity extends FragmentActivity //implements OnMapRe
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
-//    @Override
-//    public void onMapReady(GoogleMap googleMap) {
-//        mMap = googleMap;
-//
-//        // Add a marker in Sydney and move the camera
-//        LatLng sydney = new LatLng(41.938895, 12.533403);
-//        mMap.addMarker(new MarkerOptions()
-//                .position(sydney)
-//                .title("Consolato della Tunisia")
-//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker))
-//        );
-//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 11.0f));
-//    }
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
+
+        // Add a marker in Sydney and move the camera
+        LatLng sydney = new LatLng(41.938895, 12.533403);
+        mMap.addMarker(new MarkerOptions()
+                .position(sydney)
+                .title("Consolato della Tunisia")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker))
+        );
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 11.0f));
+    }
 }
