@@ -21,6 +21,7 @@ import java.util.Map;
 public class ConsolateActivity extends AppCompatActivity {
 
     private String TAG = "ConsolateActivity";
+    public static final String POSITION = "position";
 
     private ListView consolates;
 
@@ -49,8 +50,10 @@ public class ConsolateActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.i(TAG, String.valueOf(position));
-//                Intent in=new Intent(CuacaNowActivity.this,DetailActivity.class);
-//                startActivity(in)
+
+                Intent intent = new Intent( ConsolateActivity.this, ConsolateMapsActivity.class );
+                intent.putExtra(POSITION, position);
+                startActivity( intent );
             }
         });
     }
