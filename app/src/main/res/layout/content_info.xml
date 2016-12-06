@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:text="@string/info_label"
-        android:drawableLeft="@mipmap/ic_launcher"
+        android:drawableLeft="@drawable/stemma"
         android:drawablePadding="5dp"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:layout_alignParentRight="true"
