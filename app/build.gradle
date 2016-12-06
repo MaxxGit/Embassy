@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
     defaultConfig {
-//        multiDexEnabled true
+        multiDexEnabled true
         applicationId "stm.com.embassy"
         minSdkVersion 15
         targetSdkVersion 25
@@ -27,6 +27,8 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.0.0'
     compile 'com.android.support:design:25.0.0'
-    compile 'com.google.android.gms:play-services:9.8.0'
+//    compile 'com.google.android.gms:play-services:9.8.0'
+    compile 'com.google.android.gms:play-services:8.4.0'
+//    compile 'com.android.support:multidex:+'
     testCompile 'junit:junit:4.12'
 }
