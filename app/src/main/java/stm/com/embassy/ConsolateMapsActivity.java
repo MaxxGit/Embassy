@@ -15,15 +15,17 @@ public class ConsolateMapsActivity extends FragmentActivity implements OnMapRead
 {
 
     private GoogleMap mMap;
+    private int position;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consolate_maps);
         //Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        position = getIntent().getIntExtra(ConsolateActivity.POSITION, 0);
     }
 
 
@@ -39,14 +41,16 @@ public class ConsolateMapsActivity extends FragmentActivity implements OnMapRead
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
+        String title = getResources().getStringArray(R.array.consolates_item)[position];
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(41.938895, 12.533403);
+        double lat = Double.parseDouble(getResources().getStringArray(R.array.consolates_lat)[position]);
+        double lng = Double.parseDouble(getResources().getStringArray(R.array.consolates_lng)[position]);
+        LatLng consolate = new LatLng(lat, lng);
         mMap.addMarker(new MarkerOptions()
-                .position(sydney)
-                .title("Consolato della Tunisia")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker))
+                .position(consolate)
+                .title(title)
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker))
         );
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 11.0f));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(consolate, 11.0f));
     }
 }
