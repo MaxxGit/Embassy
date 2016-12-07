@@ -44,8 +44,8 @@ public class ConsolateMapsActivity extends FragmentActivity implements OnMapRead
     public void onMapReady(GoogleMap googleMap) {
         Resources res = getResources();
         mMap = googleMap;
-        String title = getResources().getStringArray(R.array.consolates_item)[position];
-        // Add a marker in Sydney and move the camera
+        String key = getResources().getStringArray(R.array.consolates_item)[position];
+        String label = getString(getResources().getIdentifier(key + "_label", "string", getPackageName()));
         TypedArray latitudes = res.obtainTypedArray(R.array.consolates_lat);
         double lat = latitudes.getFloat(position, 0);
         TypedArray longitudes = res.obtainTypedArray(R.array.consolates_lng);
@@ -53,7 +53,7 @@ public class ConsolateMapsActivity extends FragmentActivity implements OnMapRead
         LatLng consolate = new LatLng(lat, lng);
         mMap.addMarker(new MarkerOptions()
                 .position(consolate)
-                .title(title)
+                .title(label)
 //                .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker))
         );
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(consolate, 11.0f));

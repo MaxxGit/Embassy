@@ -31,19 +31,19 @@
     </array>
 
     <array name="consolates_lat">
-        <item>41.938895</item>
-        <item>45.464053</item>
-        <item>44.404466</item>
-        <item>40.857999</item>
-        <item>38.124754</item>
+        <item>41.938823</item>
+        <item>45.495176</item>
+        <item>44.404731</item>
+        <item>40.858375</item>
+        <item>38.124541</item>
     </array>
 
     <array name="consolates_lng">
-        <item>12.533403</item>
-        <item>9.206659</item>
-        <item>8.943811</item>
-        <item>14.283894</item>
-        <item>13.360476</item>
+        <item>12.533583</item>
+        <item>9.195229</item>
+        <item>8.943907</item>
+        <item>14.281782</item>
+        <item>13.360518</item>
     </array>
 
 </resources>
