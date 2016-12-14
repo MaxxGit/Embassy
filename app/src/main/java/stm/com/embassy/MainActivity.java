@@ -30,4 +30,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, EventActivity.class);
         startActivity(intent);
     }
+
+    public void onServiziClick(View view){
+        Intent intent = new Intent(this, ServiziActivity.class);
+        startActivity(intent);
+    }
 }

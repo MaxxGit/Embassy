@@ -43,6 +43,17 @@
             android:onClick="onEventClick"
             android:text="@string/eventi_main_button" />
 
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/servizi"
+            android:onClick="onServiziClick"
+            android:text="SERVIZI" />
+
     </LinearLayout>
 
 
