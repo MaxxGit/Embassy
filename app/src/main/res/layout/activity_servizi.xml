@@ -11,6 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="stm.com.embassy.ServiziActivity">
 
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,17 +43,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/consolari"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/imageView3"
-        android:paddingTop="10dp"
-        android:layout_alignBottom="@+id/textView8"
-        android:layout_alignTop="@+id/textView5" />
-
     <TextView
         android:text="Operazioni di cancelleria"
         android:layout_width="wrap_content"
@@ -76,13 +66,46 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <TextView
-        android:text="Moduli"
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView4"
-        android:layout_toRightOf="@+id/imageView4"
-        android:id="@+id/textView9"
+        app:srcCompat="@drawable/consolari"
+        android:id="@+id/imageView3"
+        android:paddingTop="10dp"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/textView8" />
+
+    <TextView
+        android:text="Bulletin n.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView10"
+        android:layout_toRightOf="@+id/imageView10"
+        android:id="@+id/textView21"
+        android:textAppearance="@android:style/TextAppearance"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/consolari"
+        android:layout_below="@+id/imageView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/imageView11" />
+
+    <TextView
+        android:text="Passaporto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView11"
+        android:layout_toRightOf="@+id/imageView11"
+        android:id="@+id/textView22"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:textAppearance="@android:style/TextAppearance" />
@@ -90,21 +113,42 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/moduli"
+        app:srcCompat="@drawable/consolari"
         android:layout_marginTop="17dp"
-        android:id="@+id/imageView4"
-        android:layout_below="@+id/imageView3"
+        android:id="@+id/imageView10"
+        android:layout_below="@+id/textView8"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/moduli"
+        android:layout_below="@+id/imageView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/imageView12" />
+
+    <TextView
+        android:text="Moduli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView12"
+        android:layout_toRightOf="@+id/imageView12"
+        android:id="@+id/textView23"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@android:style/TextAppearance" />
 
     <TextView
         android:text="Lista moduli | PDF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView9"
-        android:layout_toRightOf="@+id/imageView4"
-        android:id="@+id/textView11"
+        android:layout_below="@+id/textView23"
+        android:layout_toRightOf="@+id/imageView12"
+        android:id="@+id/textView24"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignBottom="@+id/imageView4" />
+        android:layout_alignBottom="@+id/imageView12" />
 </RelativeLayout>
