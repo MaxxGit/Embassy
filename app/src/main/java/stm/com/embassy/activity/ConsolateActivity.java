@@ -1,9 +1,7 @@
-package stm.com.embassy;
+package stm.com.embassy.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -18,7 +16,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ConsolateActivity extends AppCompatActivity {
+import stm.com.embassy.R;
+
+public class  ConsolateActivity extends AppCompatActivity {
 
     private String TAG = "ConsolateActivity";
     public static final String POSITION = "position";

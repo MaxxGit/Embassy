@@ -1,7 +1,9 @@
-package stm.com.embassy;
+package stm.com.embassy.activity;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+
+import stm.com.embassy.R;
 
 //import com.google.android.gms.maps.CameraUpdateFactory;
 //import com.google.android.gms.maps.GoogleMap;

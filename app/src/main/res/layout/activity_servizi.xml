@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="stm.com.embassy.ServiziActivity">
+    tools:context="stm.com.embassy.activity.ServiziActivity">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -87,16 +87,6 @@
         android:layout_alignParentEnd="true"
         android:textAppearance="@android:style/TextAppearance" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/moduli"
-        android:layout_marginTop="17dp"
-        android:id="@+id/imageView4"
-        android:layout_below="@+id/imageView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <TextView
         android:text="Lista moduli | PDF"
         android:layout_width="wrap_content"
@@ -107,4 +97,36 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignBottom="@+id/imageView4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/moduli"
+        android:layout_marginTop="12dp"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/consolari"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/imageView6" />
+
+    <TextView
+        android:text="Passaporti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickPassaporti"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

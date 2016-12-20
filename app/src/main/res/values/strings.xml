@@ -47,5 +47,6 @@
 
     <string name="palermo_label">CONSOLATO TUNISINO A PALERMO</string>
     <string name="palermo_content">Indirizzo: Piazza Ignazio Florio 24  90139 Palermo\nTelefono: 091 321231\nFax: 091 6111733</string>
+    <string name="title_activity_passaporti">PassaportiActivity</string>
 
 </resources>

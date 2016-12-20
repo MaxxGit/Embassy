@@ -1,4 +1,4 @@
-package stm.com.embassy;
+package stm.com.embassy.activity;
 
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -9,9 +9,10 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import stm.com.embassy.R;
 
 public class ConsolateMapsActivity extends FragmentActivity implements OnMapReadyCallback
 {

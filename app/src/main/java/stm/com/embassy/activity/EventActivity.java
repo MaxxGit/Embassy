@@ -1,4 +1,4 @@
-package stm.com.embassy;
+package stm.com.embassy.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import stm.com.embassy.R;
 
 public class EventActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package stm.com.embassy;
+package stm.com.embassy.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import stm.com.embassy.R;
+import stm.com.embassy.activity.ConsolateActivity;
+import stm.com.embassy.activity.EventActivity;
+import stm.com.embassy.activity.InfoActivity;
 
 public class ScrollingActivity extends AppCompatActivity {
 
