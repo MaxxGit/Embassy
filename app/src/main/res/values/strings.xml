@@ -5,6 +5,7 @@
     <string name="action_settings">Cerca</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_event">EventActivity</string>
+    <string name="facebook_app_id">1165259520257863</string>
 
     <string name="info_label">Ambasciata di Tunisia a Roma</string>
     <string name="info_content">E’ una sezione bilaterale a Roma e tratta degli interessi Tunisina in Italia. L’ambasciata ha anche un ruolo importante nello sviluppo commerciale, negli affari culturali e stabilisce contatti con la stampa locale. Le attività di tutte le ambasciate Tunisina solitamente sono coordinate dal Ministero degli affari esteri. L’ambasciata Tunisina a Roma è comandata dall’ambasciatore Tunisiia in Italia, Moez Sinaoui.</string>

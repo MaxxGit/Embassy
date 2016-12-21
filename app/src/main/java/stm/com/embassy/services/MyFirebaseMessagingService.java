@@ -18,6 +18,7 @@ import org.json.JSONObject;
 
 import stm.com.embassy.activity.MessaggiActivity;
 import stm.com.embassy.app.Config;
+import stm.com.embassy.utils.DatabaseHelper;
 import stm.com.embassy.utils.NotificationUtils;
 
 
@@ -26,6 +27,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     private static final String TAG = MyFirebaseMessagingService.class.getSimpleName();
 
     private NotificationUtils notificationUtils;
+
+    private static String messageToDisplay;
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
@@ -38,6 +41,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         if (remoteMessage.getNotification() != null) {
             Log.e(TAG, "Notification Body: " + remoteMessage.getNotification().getBody());
             handleNotification(remoteMessage.getNotification().getBody());
+            messageToDisplay=remoteMessage.getNotification().getBody();
         }
 
         // Check if message contains a data payload.
@@ -53,6 +57,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         }
      }
 
+
     private void handleNotification(String message) {
         if (!NotificationUtils.isAppIsInBackground(getApplicationContext())) {
             // app is in foreground, broadcast the push message
@@ -63,10 +68,18 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             // play notification sound
             NotificationUtils notificationUtils = new NotificationUtils(getApplicationContext());
             notificationUtils.playNotificationSound();
+
+
         }else{
             // If the app is in background, firebase itself handles the notification
         }
     }
+
+    public static String getMessageToDisplay(){
+
+        return messageToDisplay;
+    }
+
 
     private void handleDataMessage(JSONObject json) {
         Log.e(TAG, "push json: " + json.toString());
@@ -124,6 +137,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     private void showNotificationMessage(Context context, String title, String message, String timeStamp, Intent intent) {
         notificationUtils = new NotificationUtils(context);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        messageToDisplay=message;
         notificationUtils.showNotificationMessage(title, message, timeStamp, intent);
     }
 
@@ -133,6 +147,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     private void showNotificationMessageWithBigImage(Context context, String title, String message, String timeStamp, Intent intent, String imageUrl) {
         notificationUtils = new NotificationUtils(context);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        messageToDisplay=message;
         notificationUtils.showNotificationMessage(title, message, timeStamp, intent, imageUrl);
     }
 }

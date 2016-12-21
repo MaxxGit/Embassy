@@ -19,6 +19,7 @@
         android:gravity="center_horizontal"
         android:textColor="@color/colorPrimary"
         android:textSize="26dp"
+        android:text=" "
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
